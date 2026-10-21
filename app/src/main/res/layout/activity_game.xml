@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_r§oot"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/game_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EE"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:id="@+id/board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <TableRow>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="32sp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="32sp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="32sp" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="32sp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="32sp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="32sp" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="32sp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="32sp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="32sp" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="New Game"
+        android:visibility="gone" />
+</LinearLayout>
