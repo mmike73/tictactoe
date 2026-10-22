@@ -20,7 +20,7 @@ public class StartGame extends AppCompatActivity {
             String name2 = ((EditText) findViewById(R.id.player2)).getText().toString().trim();
 
             if (name1.isEmpty() || name2.isEmpty()) {
-                Toast.makeText(this, "Please enter the names of both players", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Enter the names of the players", Toast.LENGTH_SHORT).show();
                 return;
             }
 

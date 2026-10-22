@@ -4,6 +4,6 @@
 
     <item
         android:id="@+id/change_background_color_action"
-        android:title="Change Background Color"
+        android:title="@string/menu_change_background_color"
         app:showAsAction="never" />
 </menu>

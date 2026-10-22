@@ -3,4 +3,5 @@
     <string name="start_button">Start game</string>
     <string name="player1">Player 1:</string>
     <string name="player2">Player 2:</string>
+    <string name="menu_change_background_color">Background colorr</string>
 </resources>

@@ -31,9 +31,7 @@ public class Game extends AppCompatActivity {
     private boolean gameOver = false;
 
     private static final int[][] LINES = {
-            {0, 1, 2}, {3, 4, 5}, {6, 7, 8},
-            {0, 3, 6}, {1, 4, 7}, {2, 5, 8},
-            {0, 4, 8}, {2, 4, 6}
+            {0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}
     };
 
     @Override
@@ -69,13 +67,13 @@ public class Game extends AppCompatActivity {
 
     private void onCellClick(View v) {
         if (gameOver) {
-            Toast.makeText(this, "The game is over!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Game over!", Toast.LENGTH_SHORT).show();
             return;
         }
 
         Button button = (Button) v;
         if (!button.getText().toString().isEmpty()) {
-            Toast.makeText(this, "That cell is already taken", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Cell already taken", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -87,7 +85,7 @@ public class Game extends AppCompatActivity {
             newGameButton.setVisibility(View.VISIBLE);
         } else if (boardFull()) {
             gameOver = true;
-            statusText.setText("It's a tie!");
+            statusText.setText("Tie!");
             newGameButton.setVisibility(View.VISIBLE);
         } else {
             player1Turn = !player1Turn;
