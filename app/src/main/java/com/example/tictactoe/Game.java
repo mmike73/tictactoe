@@ -30,6 +30,8 @@ public class Game extends AppCompatActivity {
     private boolean player1Turn;
     private boolean gameOver = false;
 
+    private int currentColor = Color.WHITE;
+
     private static final int[][] LINES = {
             {0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}
     };
@@ -141,19 +143,10 @@ public class Game extends AppCompatActivity {
             return super.onOptionsItemSelected(item);
         }
 
-        final String[] names = {"White", "Black", "Blue", "Green", "Red"};
-        final int[] colors = {
-                Color.WHITE,
-                Color.BLACK,
-                Color.BLUE,
-                Color.GREEN,
-                Color.RED
-        };
-
-        new AlertDialog.Builder(this)
-                .setTitle("Choose a background color")
-                .setItems(names, (dialog, which) -> root.setBackgroundColor(colors[which]))
-                .show();
+        new ColorPickerDialog(this, currentColor, color -> {
+            currentColor = color;
+            root.setBackgroundColor(color);
+        }).show();
 
         return true;
     }
