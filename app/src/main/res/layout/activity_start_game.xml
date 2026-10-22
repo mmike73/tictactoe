@@ -9,8 +9,7 @@
     android:paddingStart="48dp"
     android:paddingTop="24dp"
     android:paddingEnd="48dp"
-    android:paddingBottom="24dp"
-    tools:context=".StartGame">
+    android:paddingBottom="24dp">
 
     <LinearLayout
         android:layout_width="match_parent"
