@@ -141,13 +141,13 @@ public class Game extends AppCompatActivity {
             return super.onOptionsItemSelected(item);
         }
 
-        final String[] names = {"White", "Light Blue", "Light Green", "Yellow", "Pink"};
+        final String[] names = {"White", "Black", "Blue", "Green", "Red"};
         final int[] colors = {
                 Color.WHITE,
-                Color.parseColor("#BBDEFB"),
-                Color.parseColor("#C8E6C9"),
-                Color.parseColor("#FFF9C4"),
-                Color.parseColor("#F8BBD0")
+                Color.BLACK,
+                Color.BLUE,
+                Color.GREEN,
+                Color.RED
         };
 
         new AlertDialog.Builder(this)
